@@ -1,3 +1,7 @@
+''' 
+RA: 23333 - RAFAEL MOREIRA CAVALCANTE DE SOUZA
+DS23 - VESP  
+'''
 import time
 from os import system as limparTela  
 import random
@@ -6,16 +10,10 @@ class Forca:
     def __init__(self): #construtor
         self.letra = " "
         self.listaPalavras = {
-            "Países": ["Zimbábue", "Quirguistão", 
-                       "Eslovênia", "Bangladesh", "Uzbequistão"],
-            
-            "Profissões": ["Neurocirurgião", "Arqueólogo", 
-                           "Biólogo marinho", "Meteorologista", "Psicólogo forense"],
-            "Animais": ["Ornitorrinco", "Quati",
-                        "Axolote", "Quokka", "Hipopótamo"],
-            
-            "Alimentos": ["Quinoa", "Rúcula", 
-                          "Açaí", "Wasabi", "Brie"]
+            "Países": ["Zimbábue", "Quirguistão","Eslovênia", "Bangladesh", "Uzbequistão"],
+            "Profissões": ["Neurocirurgião", "Arqueólogo","Biólogo marinho", "Meteorologista", "Psicólogo forense"],
+            "Animais": ["Ornitorrinco", "Quati","Axolote", "Quokka", "Hipopótamo"],
+            "Alimentos": ["Quinoa", "Rúcula", "Açaí", "Wasabi", "Brie"]
             }
         self.resposta = [] #Lista de respostas
         self.tentativas = [] #Lista de Tentativas
@@ -49,7 +47,7 @@ class Forca:
         #Exibe a quantidade de caracteres a partir da quantiade de elementos da palavra sorteada e converte a quantidade em "_", imprimindo-os no terminal e adicionando-os na lista detinada à resposta.
         self.resposta.clear() #Garantia de que sempre que for adicionar carcteres a lista estará limpa.
         for caractere in self.palavraSorteada: 
-            if caractere == " ":
+            if caractere.isspace():
                 print(" ",end="")
                 self.resposta.append(" ")
             else:
@@ -181,7 +179,7 @@ class Forca:
 
             case 5:
                 print(f"{self.BOLD}  _______     ")
-                print(f" |/      | Chances = {self.erro-1}    ")
+                print(f" |/      | Chances = {self.erro}    ")
                 print(" |       O     ")
                 print(" |            ")
                 print(" |            ")
@@ -189,7 +187,7 @@ class Forca:
                 
             case 4:
                 print(f"{self.BOLD}  _______     ")
-                print(f" |/      | Chances = {self.erro-1}   ")
+                print(f" |/      | Chances = {self.erro}   ")
                 print(" |       O    ")
                 print(" |       |     ")
                 print(" |            ")
@@ -197,21 +195,21 @@ class Forca:
             
             case 3:
                 print(f"{self.BOLD}  _______     ")
-                print(f" |/      | Chances = {self.erro-1}   ")
+                print(f" |/      | Chances = {self.erro}   ")
                 print(" |       O    ")
                 print(" |      /|    ")
                 print(" |            ")
                 print("_|___  ", end="")
             case 2:
                 print(f"{self.BOLD}  _______     ")
-                print(f" |/      | Chances = {self.erro-1}    ")
+                print(f" |/      | Chances = {self.erro}    ")
                 print(" |       O    ")
                 print(" |      /|\  ")
                 print(" |            ")
                 print("_|___  ", end="")
             case 1:
                 print(f"{self.BOLD}  _______     ")
-                print(f" |/      | Chances = {self.erro-1}    ")
+                print(f" |/      | Chances = {self.erro}    ")
                 print(" |       O    ")
                 print(" |      /|\  ")
                 print(" |      /     ")
