@@ -7,7 +7,7 @@ O sistema foi desenvolvido utilizando a seguinte tecnologia:
 
 - Python: Linguagem de programação de alto nível e amplamente utilizada, escolhida pela sua versatilidade e facilidade de desenvolvimento.
 
-- Frameworks: Podem ter sido utilizados frameworks e bibliotecas específicas para auxiliar no desenvolvimento do sistema, como a Biblioteca Time para inserção do timer, a Biblioteca Random para sortear a palavra e a Bibliota os para interagir com o terminal.
+- Frameworks: Podem ter sido utilizados frameworks e bibliotecas específicas para auxiliar no desenvolvimento do sistema, como a Biblioteca Time para inserção do timer, a Biblioteca Random para sortear a palavra e a Biblioteca os para interagir com o terminal.
 
 ## Requisitos de Utilização
 Para executar o Jogo da Forca em seu ambiente local, siga a instrução abaixo:
